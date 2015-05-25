@@ -1,0 +1,129 @@
+@sky-blue: #00aeef;
+@dark-grey: #212121;
+
+@font-face {
+	font-family: raleway;
+	src: url(../fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+	font-family: ralewayLight;
+	src: url(../fonts/Raleway-Light.ttf);
+}
+
+@font-face {
+	font-family: ralewayBold;
+	src: url(../fonts/Raleway-Bold.ttf);
+}
+
+.raleway {
+	font-family: raleway;
+}
+
+.raleway-light {
+	font-family: ralewayLight;
+}
+
+.raleway-bold {
+	font-family: ralewayBold;
+}
+
+.white {
+	color: white;
+}
+
+.dashboard {
+	background-image: url(../img/dashboard__bg.png);
+	padding-top: 300px;
+	padding-bottom: 100px;
+	background-size: cover;
+
+	&__logo {
+		margin-bottom: 30px;
+	}
+
+	&__button {
+		padding: 10px 40px;
+		color: white;
+		background-color: @sky-blue;
+		border: 1px solid transparent;
+		border-radius: 3px;
+		margin-bottom: 200px;
+
+		&:hover {
+			background-color: darken(@sky-blue, 7%);
+		}
+
+		@media (max-width: 680px) {
+			margin-bottom: 100px;
+		}
+	}
+
+	&__arrow {
+		font-size: 30px;
+		cursor: pointer;
+
+		&:hover {
+			color: darken(white, 30%);
+		}
+	}
+}
+
+.login {
+	background-color: @dark-grey;
+	padding: 10px 0;
+
+	&__button {
+		border: 1px solid white;
+		border-radius: 3px;
+		background-color: transparent;
+		width: 100%;
+		padding: 10px 0;
+		color: white;
+
+		@media (max-width: 765px) {
+			margin-bottom: 20px;
+		}
+
+		&-row {
+			padding-top: 10px;
+		}
+
+		&_blue {
+			background-color: @sky-blue;
+			border-color: @sky-blue;
+
+			&:hover {
+				background-color: darken(@sky-blue, 7%);
+			}
+		}
+	}
+}
+
+.work {
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	h1 {
+		font-size: 50px;
+		margin-bottom: 50px;
+	}
+
+	&__video {
+		margin-bottom: 20px;
+	}
+
+	&__button {
+		border: 1px solid @sky-blue;
+		border-radius: 3px;
+		background-color: @sky-blue;
+		padding: 10px 40px;
+		color: white;
+	}
+}
+
+.clients {
+	background-image: url(../img/clients__bg.png);
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
