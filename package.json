@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kellhellia/pinpoint-land/issues"
   },
-  "homepage": "https://github.com/kellhellia/pinpoint-land"
+  "homepage": "https://github.com/kellhellia/pinpoint-land",
+  "devDependencies": {
+    "gulp-image-optimization": "^0.1.3"
+  }
 }
