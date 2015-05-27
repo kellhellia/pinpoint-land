@@ -11,8 +11,4 @@ $(document).ready(function(){
   	autoplaySpeed: 3000,
   	pauseOnHover: false
   });
-
-  $('#myModal').on('shown.bs.modal', function () {
-	  $('#myInput').focus()
-	})
 });
