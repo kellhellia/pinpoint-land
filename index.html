@@ -10,6 +10,27 @@
 		<link rel="stylesheet" href="stylesheets/main.css">
 	</head>
 	<body>
+		<div class="modal fade">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title">Modal title</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>One fine body&hellip;</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Save changes</button>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+		<div class="letter" data-toggle="modal" data-target="#myModal">
+			<i class="glyphicon glyphicon-envelope"></i>
+		</div>
 		<div class="dashboard">
 			<div class="container">
 				<div class="row">
@@ -20,7 +41,7 @@
 				<div class="row">
 					<div class="col-sm-6 col-sm-offset-3">
 						<button class="dashboard__button text-uppercase center-block">
-							start campaign
+							get started
 						</button>
 					</div>
 				</div>
@@ -58,12 +79,31 @@
 			<div class="container">
 				<div class="row">
 					<h1 class="text-center text-uppercase"><span class="raleway-light">how it</span><span class="raleway-bold"> works</span></h1>
+					<div class="heading-line center-block"></div>
 				</div>
 				<div class="row">
 					<div class="col-xs-offset-0 col-sm-8 col-sm-offset-2">
 						<div class="work__video embed-responsive embed-responsive-16by9">
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/0pajUiPYjrI" frameborder="0" allowfullscreen></iframe>
 						</div>
+					</div>
+				</div>
+				<div class="row text-center">
+					<div class="work__line"></div>
+					<div class="col-sm-4">
+						<img src="img/work__check.png" class="center-block" width="70" height="70">
+						<h3 class="raleway text-uppercase">stage 1</h3>
+						<p class="work__content raleway-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quisquam dolore incidunt quam nobis animi at veritatis atque praesentium sint, beatae illum, possimus modi aperiam maxime eius esse unde nesciunt?</p>
+					</div>
+					<div class="col-sm-4">
+						<img src="img/work__pen.png" class="center-block" width="70" height="70">
+						<h3 class="raleway text-uppercase">stage 2</h3>
+						<p class="work__content raleway-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet atque repellat dignissimos provident natus ea possimus. Labore ratione expedita nostrum consequuntur voluptatum id, sed eum eaque voluptatem consectetur aspernatur fuga.</p>
+					</div>
+					<div class="col-sm-4">
+						<img src="img/work__users.png" class="center-block" width="70" height="70">
+						<h3 class="raleway text-uppercase">stage 3</h3>
+						<p class="work__content raleway-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ducimus nihil, earum, fugiat, cum veniam praesentium ratione impedit nam aperiam vero velit eum dolores repellat. Expedita dolor vel esse quasi!</p>
 					</div>
 				</div>
 				<div class="row">
@@ -78,75 +118,359 @@
 
 		<div class="clients">
 			<div class="container">
-				<div class="row">
+				<div class="clients__row row">
 					<h1 class="text-center text-uppercase white"><span class="raleway-light">our</span><span class="raleway-bold"> clients</span></h1>
+					<div class="heading-line_white center-block"></div>
 				</div>
 
-				<div class="your-class">
+				<div class="slick">
 					<div>
 						<div class="row">
-							<div class="col-sm-2">
-								<img src="img/clients/argos.png" class="img-responsive">
+							<div class="col-sm-4">
+								<img src="img/clients/argos.png" class="clients__img img-responsive center-block">
 							</div>
-							<div class="col-sm-2">
-								<img src="img/clients/comic_relief_logo.jpeg" class="img-responsive">
+							<div class="col-sm-4">
+								<img src="img/clients/comic_relief_logo.jpeg" class="clients__img img-responsive center-block">
 							</div>
-							<div class="col-sm-2">
-								<img src="img/clients/virgin-trains.jpg" class="img-responsive">
+							<div class="col-sm-4">
+								<img src="img/clients/virgin-trains.jpg" class="clients__img img-responsive center-block">
 							</div>
-							<div class="col-sm-2">
-								<img src="img/clients/hassle-logo.png" class="img-responsive">
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<img src="img/clients/hassle-logo.png" class="clients__img img-responsive center-block">
 							</div>
-							<div class="col-sm-2">
-								<img src="img/clients/paddy-power-new-logo.jpg" class="img-responsive">
+							<div class="col-sm-4">
+								<img src="img/clients/paddy-power-new-logo.jpg" class="clients__img img-responsive center-block">
 							</div>
-							<div class="col-sm-2">
-								<img src="img/clients/goaltime.png" class="img-responsive">
+							<div class="col-sm-4">
+								<img src="img/clients/goaltime.png" class="clients__img img-responsive center-block">
 							</div>
 						</div>
 					</div>
 					<div>
 						<div class="row">
-							<div class="col-sm-2">
-								<img src="img/clients/Daily-Mirror-Logo.jpg" class="img-responsive">
+							<div class="col-sm-4">
+								<img src="img/clients/Daily-Mirror-Logo.jpg" class="clients__img img-responsive center-block">
 							</div>
-							<div class="col-sm-2">
-								<img src="img/clients/NEW Bull Ring Markets Small.jpg" class="img-responsive">
+							<div class="col-sm-4">
+								<img src="img/clients/NEW Bull Ring Markets Small.jpg" class="clients__img img-responsive center-block">
 							</div>
-							<div class="col-sm-2">
-								<img src="img/clients/wdytya_logo_trans.png" class="img-responsive">
+							<div class="col-sm-4">
+								<img src="img/clients/wdytya_logo_trans.png" class="clients__img img-responsive center-block">
 							</div>
-							<div class="col-sm-2">
-								<img src="img/clients/MCC-Logo.jpg" class="img-responsive">
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<img src="img/clients/MCC-Logo.jpg" class="clients__img img-responsive center-block">
 							</div>
-							<div class="col-sm-2">
-								<img src="img/clients/police scotland.jpg" class="img-responsive">
+							<div class="col-sm-4">
+								<img src="img/clients/police scotland.jpg" class="clients__img img-responsive center-block">
 							</div>
-							<div class="col-sm-2">
-								<img src="img/clients/live-nation-logo.jpg" class="img-responsive">
+							<div class="col-sm-4">
+								<img src="img/clients/live-nation-logo.jpg" class="clients__img img-responsive center-block">
 							</div>
 						</div>
 					</div>
 					<div>
 						<div class="row">
-							<div class="col-sm-2 col-sm-offset-2">
-								<img src="img/clients/grandslam.png" class="img-responsive">
+							<div class="col-sm-2 col-sm-offset-4">
+								<img src="img/clients/grandslam.png" class="clients__img img-responsive center-block">
 							</div>
 							<div class="col-sm-2">
-								<img src="img/clients/sfs.jpg" class="img-responsive">
+								<img src="img/clients/sfs.jpg" class="clients__img img-responsive center-block">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-2 col-sm-offset-4">
+								<img src="img/clients/bmso.png" class="clients__img img-responsive center-block">
 							</div>
 							<div class="col-sm-2">
-								<img src="img/clients/bmso.png" class="img-responsive">
-							</div>
-							<div class="col-sm-2">
-								<img src="img/clients/tiger-tiger-logo-1347549166.jpg" class="img-responsive">
+								<img src="img/clients/tiger-tiger-logo-1347549166.jpg" class="clients__img img-responsive center-block">
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>92469715
+		</div>
 
+		<div class="cases">
+			<div class="container">
+				<div class="cases__row row">
+					<h1 class="text-center text-uppercase"><span class="raleway-light">key</span><span class="raleway-bold"> use cases</span></h1>
+					<div class="heading-line center-block"></div>
+				</div>
+				<div class="cases__row row text-center">
+					<div class="col-sm-4">
+						<div class="cases__block border_right-bottom">
+							<i class="cases__glyphicon glyphicon glyphicon-search"></i>
+							<p class="cases__heading text-uppercase">Hyper-local Targeting </p>
+							<p class="cases__content">Reach a local audience at the right time and right place, defined down to relevant postcodes</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="cases__block border_bottom">
+							<i class="cases__glyphicon glyphicon glyphicon-search"></i>
+							<p class="cases__heading text-uppercase">App Download</p>
+							<p class="cases__content">Drive mobile installs to your app from a locally-defined audience</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="cases__block border_left-bottom">
+							<i class="cases__glyphicon glyphicon glyphicon-search"></i>
+							<p class="cases__heading text-uppercase">Appointment to Action</p>
+							<p class="cases__content">Use the timeliness of pinpoint to deliver prompts to action on specific days, hours and minutes</p>
+						</div>
+					</div>
+				</div>
+				<div class="cases__row row text-center">
+					<div class="col-sm-4">
+						<div class="cases__block border_right-bottom">
+							<i class="cases__glyphicon glyphicon glyphicon-search"></i>
+							<p class="cases__heading text-uppercase">Event Promotion</p>
+							<p class="cases__content">Drive awareness of your event to a local catchment area</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="cases__block border_bottom">
+							<i class="cases__glyphicon glyphicon glyphicon-search"></i>
+							<p class="cases__heading text-uppercase">Sales Promotion</p>
+							<p class="cases__content">Send sales vouchers or coupons direct to the mobiles of prospects in your area</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="cases__block border_left-bottom">
+							<i class="cases__glyphicon glyphicon glyphicon-search"></i>
+							<p class="cases__heading text-uppercase">Brand Awareness</p>
+							<p class="cases__content">Publicise your brand on your prospect’s smart phones – devices we all check 150 times a day</p>
+						</div>
+					</div>
+				</div>
+				<div class="cases__row row text-center">
+					<div class="col-sm-4">
+						<div class="cases__block border_right">
+							<i class="cases__glyphicon glyphicon glyphicon-search"></i>
+							<p class="cases__heading text-uppercase">Generate Footfall</p>
+							<p class="cases__content">Drive visits to your physical outlets from local residents or commuters</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="cases__block">
+							<i class="cases__glyphicon glyphicon glyphicon-search"></i>
+							<p class="cases__heading text-uppercase">Drive to M-site</p>
+							<p class="cases__content">Generate locally targeted visitors to your mobile sites and offer pages</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="cases__block border_left">
+							<i class="cases__glyphicon glyphicon glyphicon-search"></i>
+							<p class="cases__heading text-uppercase">Amplify Other Channels</p>
+							<p class="cases__content">Use pinpoint to drive direct response from key local audiences in support of local print or posters</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="location">
+			<div class="container">
+				<div class="cases__row row">
+					<h1 class="text-center text-uppercase white"><span class="raleway-light">location</span><span class="raleway-bold"> numbers</span></h1>
+					<div class="heading-line_white center-block"></div>
+				</div>
+
+				<div class="location__row text-center white row">
+					<div class="col-sm-4">
+						<img src="img/location__pin.png" width="70" height="100" class="location__pin center-block">
+						<p class="location__heading raleway-light">Dublin</p>
+						<h1 class="location__numbers raleway">6,400,900</h1>
+					</div>
+					<div class="col-sm-4">
+						<img src="img/location__pin.png" width="70" height="100" class="location__pin center-block">
+						<p class="location__heading raleway-light">Belfast</p>
+						<h1 class="location__numbers raleway">579,276</h1>
+					</div>
+					<div class="col-sm-4">
+						<img src="img/location__pin.png" width="70" height="100" class="location__pin center-block">
+						<p class="location__heading raleway-light">London</p>
+						<h1 class="location__numbers raleway">8,173,900</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="case-studies">
+			<div class="container">
+				<div class="case-studies__row row">
+				<h1 class="text-center text-uppercase"><span class="raleway-light">case</span><span class="raleway-bold"> studies</span></h1>
+				<div class="heading-line center-block"></div>
+			</div>
+		</div>
+
+		<div class="slick-case text-center">
+			<div>
+				<div class="slick-case__bg_football">'
+					<div class="bg-overlay"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-4 col-sm-offset-4">
+								<img src="img/goaltime.png" class="img-responsive center-block">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-8 col-sm-offset-2">
+								<h3>Goal Time</h3>
+								<p class="slick-case__content">We're using pinpoint to drive quality traffic to <a href="https://goaltime.contagioussports.com/">Goal Time's mobile site</a> which offers both mobile sign-up and game play. Goal Time is an exciting new way to bet online on football that lets its community of users stake money on the goal times in big matches, the best part of the game! We use pinpoint to target prospective users by postcode in the immediate run up to big matches and have seen both strong cost per click and propensity to deposit from our pinpoint traffic.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="slick-case__bg_minicabster">'
+					<div class="bg-overlay"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-4 col-sm-offset-4">
+								<img src="img/minicabster.png" class="img-responsive center-block">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-8 col-sm-offset-2">
+								<h3>MiniCabster</h3>
+								<p class="slick-case__content">We used pinpoint to drive download of our app in Manchester and saw results sixteen times more effective than conventional banners; one in two users who interacted downloaded the app, cost per install was below £3 and we picked up valuable business travellers as a result. We heartily recommend pinpoint as a new mobile advertising solution.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="slick-case__bg_holiday">'
+					<div class="bg-overlay"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-4 col-sm-offset-4">
+								<img src="img/WorldWideTimeshareHypermarket.gif" class="img-responsive center-block">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-8 col-sm-offset-2">
+								<h3>Worldwide Timeshare Hypermarket</h3>
+								<p class="slick-case__content">We are targeting pinpoint users whilst on holiday in certain locations as it is a great way to reach our relevant audience in optimal context. The team already used various forms of geo targeting but pinpoint provides great accuracy, provides near instant results and details of audience size. What’s more with pinpoint we can target people who have been to a particular location in the last 30 days so we can also reach people on their return from a holiday location. Matching the target location to relevant timeshare offers we achieved a high CTR and good metrics for a group of almost entirely first-time visitors to our site.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="slick-case__bg_mirror">'
+					<div class="bg-overlay"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-4 col-sm-offset-4">
+								<img src="img/Daily-Mirror-Logo-1024x386.jpg" class="img-responsive center-block">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-8 col-sm-offset-2">
+								<h3>Daily Mirror</h3>
+								<p class="slick-case__content">As part of the Mirror’s campaign to encourage the UK electorate not to waste their right their vote, the marketing team worked with pinpoint to target the public in ten of the top identified swing constituencies for the 2015 general election. On the Tuesday 48 hours before polling day we sent pinpoints to constituents including Bolton North East, Dudley South, and Dewsbury County promoting a bespoke political content on the Mirror’s mobile site.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="pricing">
+			<div class="container">
+				<div class="row">
+					<h1 class="text-center text-uppercase white"><span class="raleway-bold">pricing</span><span class="raleway-light"> plans</span></h1>
+					<div class="heading-line_white center-block"></div>
+				</div>
+
+				<div class="row text-center">
+					<div class="col-sm-4">
+						<div class="card">
+							<div class="card__header">
+								<p class="card__heading text-uppercase">bronze</p>
+								<p class="card__heading_big">£300</p>
+								<p class="card__heading_small">per year</p>
+							</div>
+							<div class="card__body_with-border">
+								<p class="card__heading">2,000 messages</p>
+							</div>
+							<div class="card__body">
+								<p class="card__heading">£0.145 per additional message</p> 	
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="card">
+							<div class="card__header">
+								<p class="card__heading text-uppercase">silver</p>
+								<p class="card__heading_big">£500</p>
+								<p class="card__heading_small">per year</p>
+							</div>
+							<div class="card__body_with-border">
+								<p class="card__heading">4,000 messages</p>
+							</div>
+							<div class="card__body">
+								<p class="card__heading">£0.12 per additional message</p> 	
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="card">
+							<div class="card__header">
+								<p class="card__heading text-uppercase">gold</p>
+								<p class="card__heading_big">£1000</p>
+								<p class="card__heading_small">per year</p>
+							</div>
+							<div class="card__body_with-border">
+								<p class="card__heading">10, 000 messages</p>
+							</div>
+							<div class="card__body">
+								<p class="card__heading">£0.095 per additional message</p> 	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="press">
+			<div class="container">
+				<div class="row">
+				<h1 class="text-center text-uppercase"><span class="raleway-light">press</span><span class="raleway-bold"> coverage</span></h1>
+				<div class="heading-line center-block"></div>
+
+				<div class="row">
+					<div class="col-xs-3">
+						<a href="http://www.liverpoolecho.co.uk/special-features/how-grow-your-business-liverpool-8587445" target="blank">
+							<img src="img/liverpool-echo-logo.png" class="img-responsive">
+						</a>
+					</div>
+					<div class="col-xs-3">
+						<a href="http://www.newsworks.org.uk/News-and-Opinion/tms-releases-hyperlocal-mobile-ad-platform-" target="blank">
+							<img src="img/logo-newsworks.png" class="img-responsive">
+						</a>
+					</div>
+					<div class="col-xs-3">
+						<a href="http://mediatel.co.uk/newsline/2014/10/14/trinity-mirror-launches-hyper-local-mobile-ad-platform/" target="blank">
+							<img src="img/mediatel.png" class="img-responsive">
+						</a>
+					</div>
+					<div class="col-xs-3">
+						<a href="http://www.getmemedia.com/ideas/mobile-location-based-advertising-from-trinity-mirror/trinity-mirror.html" target="blank">
+							<img src="img/getmedia.png" class="img-responsive">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<script src="scripts/jquery-2.1.4.min.js"></script>
 		<script src="slick/slick.min.js"></script>
 		<script src="scripts/index.js"></script>
