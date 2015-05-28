@@ -180,30 +180,31 @@
 	}
 }
 
+.display-table {
+	display: table;
+}
+.display-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
 .clients {
 	background-position: center;
 	padding: 50px 0;
 
 	&__row {
-		margin-bottom: 50px;
-		display: table;
+		height: 200px;
 	}
 
 	&__img {
 		height: 100%;
-		display: table-cell;
 		@media (max-width: 480px) {
 			margin-bottom: 25px;
-		}
-		img {
-			max-width: 100%;
-			max-height: 100%;
 		}
 	}
 }
 
 .cases {
-	padding: 50px 0;
 	background-color: white;
 
 	.col-sm-4 {
@@ -212,12 +213,43 @@
 	}
 
 	&__glyphicon {
-		font-size: 50px;
-		margin-bottom: 30px;
-		color: @sky-blue;
+		width: 60px;
+		height: 60px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		margin: 0 auto;
+		&_pin {
+			background-image: url(../img/use-cases/location__pin.png)
+		}
+		&_download {
+			background-image: url(../img/use-cases/download.png)
+		}
+		&_clock {
+			background-image: url(../img/use-cases/clock.png)
+		}
+		&_calendar {
+			background-image: url(../img/use-cases/calendar.png)
+		}
+		&_price {
+			background-image: url(../img/use-cases/price.png)
+		}
+		&_award {
+			background-image: url(../img/use-cases/award.png)
+		}
+		&_shoe {
+			background-image: url(../img/use-cases/shoe.png)
+		}
+		&_phone {
+			background-image: url(../img/use-cases/phone.png)
+		}
+		&_megaphone {
+			background-image: url(../img/use-cases/megaphone.png)
+		}
 	}
 
 	&__heading {
+		margin-top: 15px;
 		font-size: 18px;
 	}
 
@@ -226,11 +258,7 @@
 	}
 
 	&__block {
-		padding: 70px 10px;
-
-		@media (max-width: 765px) {
-			padding: 20px;
-		}
+		padding: 20px 10px;
 	}
 
 	.border {
