@@ -33,8 +33,22 @@
 	color: white;
 }
 
+// Navbar 
 .navbar {
 	margin-bottom: 0;
+	border: none;
+
+	&-default {
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: white;
+
+	&:hover {
+		color: darken(white, 20%);
+	}
 }
 
 .letter {
