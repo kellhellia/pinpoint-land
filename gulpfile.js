@@ -22,7 +22,7 @@ gulp.task('less', function () {
 });
 
 gulp.task('default', function() {
-	gulp.run('less', 'images');
+	gulp.run('less');
 });
 
 gulp.watch('stylesheets/**/*.*', function() {
