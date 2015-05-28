@@ -18,5 +18,9 @@
   "homepage": "https://github.com/kellhellia/pinpoint-land",
   "devDependencies": {
     "gulp-image-optimization": "^0.1.3"
+  },
+  "dependencies": {
+    "gulp": "^3.8.11",
+    "gulp-less": "^3.0.3"
   }
 }
