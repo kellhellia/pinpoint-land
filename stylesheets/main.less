@@ -180,24 +180,26 @@
 	}
 }
 
+.display-table {
+	display: table;
+}
+.display-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
 .clients {
 	background-position: center;
 	padding: 50px 0;
 
 	&__row {
-		margin-bottom: 50px;
-		display: table;
+		height: 200px;
 	}
 
 	&__img {
 		height: 100%;
-		display: table-cell;
 		@media (max-width: 480px) {
 			margin-bottom: 25px;
-		}
-		img {
-			max-width: 100%;
-			max-height: 100%;
 		}
 	}
 }
