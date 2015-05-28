@@ -114,13 +114,13 @@
 /* Dots */
 .slick-slider
 {
-    margin-bottom: 30px;
+   
 }
 
 .slick-dots
 {
     position: absolute;
-    bottom: -45px;
+    bottom: 0;
     display: block;
     width: 100%;
     padding: 0;
@@ -174,14 +174,14 @@
     height: 20px;
     content: '•';
     text-align: center;
-    opacity: .25;
-    color: black;
+    opacity: .5;
+    color: white;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before
 {
-    opacity: .75;
-    color: black;
+    opacity: 1;
+    color: white;
 }
