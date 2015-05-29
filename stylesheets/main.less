@@ -48,6 +48,7 @@
 
 .navbar-default .navbar-nav>li>a {
 	color: white;
+	padding: 15px;
 
 	&:hover {
 		color: darken(white, 20%);
@@ -155,10 +156,6 @@
 		background-image: url(../img/login__logo.png);
 	}
 
-	&__links {
-		padding-top: 10px;
-	}
-
 	&__link {
 		font-size: 16px;
 		color: white;
@@ -175,12 +172,17 @@
 		}
 	}
 
+	&__buttons-block {
+		margin-top: 4px;
+	}
+
 	&__button {
 		border: 1px solid white;
 		border-radius: 3px;
 		background-color: transparent;
 		color: white;
-		padding: 0 40px;
+		padding: 4px 40px;
+		margin-top: -5px;
 
 		&:hover {
 			background-color: white;
@@ -196,11 +198,12 @@
 		}
 
 		&_blue {
-			padding: 0 40px;
+			padding: 4px 40px;
 			border-radius: 3px;
 			background-color: @sky-blue;
 			border: 1px solid @sky-blue;
 			color: white;
+			margin-top: -5px;
 
 			&:hover {
 				background-color: darken(@sky-blue, 7%);
