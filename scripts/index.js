@@ -1,6 +1,6 @@
 $(document).ready(function(){
   
-  $(".login").stick_in_parent();
+  $(".navbar").stick_in_parent();
 
   $(function() {
 	  $('a[href*=#]:not([href=#])').click(function() {
