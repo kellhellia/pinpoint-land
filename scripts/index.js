@@ -1,21 +1,18 @@
 $(document).ready(function(){
-  
   $(".navbar").stick_in_parent();
 
-  $(function() {
-	  $('a[href*=#]:not([href=#])').click(function() {
-	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-	      var target = $(this.hash);
-	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	      if (target.length) {
-	        $('html,body').animate({
-	          scrollTop: target.offset().top
-	        }, 1000);
-	        return false;
-	      }
-	    }
-	  });
-	});
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
 
   $('.slick').slick({
   	autoplay: true,
@@ -31,5 +28,11 @@ $(document).ready(function(){
   	pauseOnHover: false
   });
 
+  $('.modal__btn').click(function() {
+    ga('send', 'event', 'Form', 'Submit', 'Request a callback');
+  });
 
+  $('.login__button_blue').click(function () {
+    ga('send', 'event', 'Form', 'Submit', 'Signup');
+  });
 });
